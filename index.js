@@ -137,7 +137,24 @@ siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
 
 // 3f çözümü
 
-/* kodlar buraya */
+tekraredensayilar = [];
+const tekrarlarObj = {};
+
+for (let i = 0; i < sayilar.length; i++) {
+  let num = sayilar[i];
+
+  if (tekrarlarObj.hasOwnProperty(num)) {
+    tekrarlarObj[num] += 1;
+  } else {
+    tekrarlarObj[num] = 1;
+  }
+}
+
+for (let key in tekrarlarObj) {
+  tekraredensayilar.push(
+    `${key} sayısı ${tekrarlarObj[key]} kere tekrar edilmiştir`
+  );
+}
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
