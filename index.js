@@ -109,16 +109,20 @@ for (let sayi of sayilar) {
     enbuyuk = sayi;
   }
 }
-console.log(enkucuk);
-console.log(enbuyuk);
+//console.log(enkucuk);
+//console.log(enbuyuk);
 
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = [];
+sayilar.forEach((sayi) => {
+  if (sayi % 3 === 0) {
+    ucetambolunenler.push(sayi);
+  }
+});
+//console.log(ucetambolunenler);
 
 // 3c çözümü:
-
-/* kodlar buraya */
 
 // 3d çözümü
 
