@@ -124,6 +124,8 @@ sayilar.forEach((sayi) => {
 
 // 3c çözümü:
 
+ucebolunenlerintoplami = ucetambolunenler.reduce((acc, sayi) => acc + sayi, 0);
+//console.log(ucebolunenlerintoplami);
 // 3d çözümü
 
 /* kodlar buraya */
