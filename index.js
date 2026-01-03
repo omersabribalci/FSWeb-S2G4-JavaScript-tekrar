@@ -151,9 +151,11 @@ for (let i = 0; i < sayilar.length; i++) {
 }
 
 for (let key in tekrarlarObj) {
-  tekraredensayilar.push(
-    `${key} sayısı ${tekrarlarObj[key]} kere tekrar edilmiştir`
-  );
+  if (tekrarlarObj[key] > 1) {
+    tekraredensayilar.push(
+      `${key} sayısı ${tekrarlarObj[key]} kere tekrar edilmiştir`
+    );
+  }
 }
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
